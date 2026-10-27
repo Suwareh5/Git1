@@ -1,0 +1,728 @@
+
+/*GENERAL STUFF FOR THE WHOLE WEBSITE*/
+
+body {
+    background-color: rgb(253, 255, 236);
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    min-height: 100vh;
+}
+
+.border {
+    background-color: rgb(224, 146, 82);
+    height: 5px;
+    width: 80%;
+    
+    border: 2px solid rgb(224, 146, 82);
+    border-radius: 5px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-left: 170px;
+}
+
+#header {
+    height: 50px;
+    padding: 15px;
+    background-color: rgb(46, 66, 168);
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+#logotype {
+    color: rgb(253, 255, 236);
+}
+#logosite {
+    color: rgb(241, 122, 25);
+}
+
+.thewhole {
+    height: 582px;
+    padding: 15px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+   
+}
+
+.page-layout {
+    display: flex;
+    align-items: stretch;
+   
+}
+
+
+.sidebar {
+    flex: 0 0 250px;
+    padding: 15px;
+}
+
+.page-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/*Everything that has to do with NAVIGATION and the left side of the webpage--------------------------------------------------------------*/
+
+
+
+/*THE FIXED NAVIGATION on the left side of the webpage*/
+
+
+
+#navigation {
+    background-color: rgb(46, 66, 168);
+    border-radius: 10px;
+    width: 100%;
+    height: 450px;
+
+    top: 20px;
+    position: sticky;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+    
+}
+
+/*TITLE OF THE NAV MENU*/
+
+#menutitle {
+    width: 100px;
+    color: rgb(241, 122, 25);
+    height: fit-content;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: larger;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*EACH LINK of the navigation menu*/
+
+.navlink {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.navlink a {
+    padding: 10px 20px;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(241, 122, 25);
+    color: rgb(253, 255, 236);
+    text-align: center;
+    font-size: 20px;
+    transition-duration: 125ms;
+
+    display: block;
+}
+
+
+
+.navlink a:hover {
+    background-color: rgb(253, 255, 236);
+    color: rgb(241, 122, 25);
+}
+
+.navlink a:focus-visible {
+    outline: 3px solid orange;
+    background-color: rgb(253, 255, 236);
+    color: rgb(241, 122, 25);
+}   
+
+h2 {
+    color: rgb(241, 122, 25);
+}
+
+/*Everything about the MAIN-stuff as well as the right side of the website---------------------------------------------------------*/
+
+.main {
+    border-bottom: 5px solid rgb(46, 66, 168);
+    background-color: rgb(46, 66, 168);
+    border-radius: 5px ; 
+    width: 90%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*The left side of the Main that contains the TITLE OF EACH CATEGORY*/
+
+.titlesection {
+    background-color: rgb(46, 66, 168);
+    width: 30%;
+    height: 100%;
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*The right side of the main stuff(Aka the MOTHER OF THE SECTIONS AND BOXES*/
+
+#collageblock {
+    background-color: rgb(46, 66, 168);
+    width: 70%;
+    height: 550px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/*The TWO SECTIONS holding the four boxes in About me*/
+
+.sectioninblock {
+    
+    border: 2px solid rgb(46, 66, 168);
+    color: black;
+    min-width: 0;
+    min-height: 0;
+}
+
+.sectioninblock h3{
+    color: rgb(241, 122, 25);
+}
+
+
+/*The FOUR BOXES in About me ----------------------------------------------------------------------------------------------------------*/
+
+#thisisme {
+    background-color: rgb(92, 129, 240);
+    padding: 10px;
+    text-align: center;
+    padding-top: 0%;
+    border-top-left-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+#pictureofme {
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#pictureofme img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    border-top-right-radius: 10px;
+}
+
+#memory {
+    background-color: rgb(92, 129, 240);
+    padding: 10px;
+    text-align: center;
+    padding-top: 0%;
+    border-bottom-left-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#interest {
+    background-color: rgb(92, 129, 240);
+    padding: 10px;
+    text-align: center;
+    padding-top: 0%;
+    border-bottom-right-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/*Everything to do with the TABLE and future&skill section-------------------------------------------------------------------------------------------------------------------------- */
+
+/*The container for skillblock and skillexplained*/
+#skillblock {
+    width: 70%;
+    max-height: 550px;
+    border-left: 5px solid rgb(0, 102, 255);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/*The container for INFORMATION before the table container*/
+#skillexplained {
+    background-color: rgb(92, 129, 240);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 40%;
+    padding: 10px;
+    font-size: large;
+}
+
+
+/*The container for the TABLE*/
+#skilltable {
+    background-color: rgb(46, 66, 168);
+    height: 60%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid  rgb(0, 0, 0);
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(241, 122, 25);
+    color: rgb(236, 245, 255);
+}
+
+td {
+    background-color: rgb(253, 255, 236);
+}
+
+/*Everything to do with MY WORK-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Container for the three cards*/
+#holderforthree {
+    width: 70%;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+/*The three cards and container for its content*/
+.threecard {
+    width: 260px;
+    height: 520px;
+    background-color: rgb(87, 129, 220);
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+/*The pictures at the top of the three containers*/
+
+.picthree {
+    background-color: rgb(0, 0, 0);
+    height: 38%;
+   
+
+}
+
+.picthree img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+}
+/*The textsection inside the three containers*/
+
+.textthree {
+    background-color: rgb(92, 129, 240);
+    flex: 1;
+    min-height: 0;
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.textthree section {
+    height: 120px;
+}
+
+.textthree ul {
+    border-top: 2px solid rgb(46, 66, 168);
+    padding-top: 10px;
+}
+
+/*Everything to do with CONTACTFORM------------------------------------------------------------------------------------------------------*/
+
+
+
+#contactform {
+    height: 550px;
+    width: 70%;
+    border-left: 5px solid rgb(0, 102, 255);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+#contacttext {
+    background-color: rgb(92, 129, 240);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 30%;
+    padding: 10px;
+    font-size: large;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#mailbox {
+    background-color: rgb(46, 66, 168);
+    height: 70%;
+    padding: 10px;
+    color: rgb(241, 122, 25);
+}
+
+input {
+    margin-top: 15px;
+    margin-right: 265px;
+    padding: 5px;
+    background-color: rgb(241, 217, 253);
+    
+
+    border: 2px solid rgb(241, 122, 25);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[value=Send], [value=Reset] {
+    background-color: rgb(241, 122, 25);
+    color: rgb(253, 255, 236);
+}
+
+input[value=Send]:hover, [value=Reset]:hover {
+    background-color: rgb(253, 255, 236);
+    border-color: rgb(253, 255, 236);
+    color: rgb(241, 122, 25);
+}
+
+
+input[value=Send]:focus-visible, [value=Reset]:focus-visible {
+    background-color: rgb(253, 255, 236);
+    border-color: rgb(253, 255, 236);
+    outline: 2px solid rgb(241, 122, 25);
+    color: rgb(241, 122, 25);
+}
+
+input[type=text]:focus {
+    background-color: rgb(253, 255, 236);
+    border: 2px solid rgb(241, 122, 25);
+    outline: none;
+}
+
+input[type=text]:focus-visible {
+    outline: 2px solid rgb(241, 122, 25);
+    
+}
+
+
+#Linkedin {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(241, 122, 25);
+    color: rgb(253, 255, 236);
+    font-size: smaller;
+    text-decoration: none;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#Linkedin:hover {
+    background-color: rgb(253, 255, 236);
+    color: rgb(241, 122, 25);
+}
+
+#Linkedin:focus-visible {
+    outline: 3px solid rgb(241, 122, 25);
+    background-color: rgb(253, 255, 236);
+    color: rgb(241, 122, 25);
+}
+
+
+
+/**/
+
+
+footer {
+    background-color: rgb(46, 66, 168);
+    height: 300px;
+    margin-top: 200px;
+    padding: 10px;
+    color: rgb(253, 255, 236);
+}
+
+footer h3{
+    color: rgb(241, 122, 25);
+}
+
+#upperfooter {
+    height: 80%;
+    display: flex;
+    flex-direction: row;    
+}
+
+.footupsection {
+    border-bottom: 2px solid rgb(0, 102, 255);
+    
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+}
+  
+
+#footlink {
+    color: rgb(241, 122, 25);
+    text-decoration: none;
+}
+
+#footlink:hover {
+    color: rgb(253, 255, 236);
+}
+
+
+
+
+/*MEDIA QUERIES--------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+   
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .page-content {
+        width: 100%;
+        min-width: 0; /*???*/
+    }
+
+    #header {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .thewhole {
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .border {
+        margin: 30px 55px;
+    }
+
+
+
+    /*The navigation-----------------------------------------*/
+
+
+    #navigation {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #menutitle {
+        margin: 0 0 0 10px;
+    }
+
+    #menubox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navlink {
+        width: 100%;
+        margin: 5px 0 5px 0;
+        padding: none;
+    }
+
+    .navlink a {
+        font-size: 18px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Main content--------------------------------------------*/
+
+    .main {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .titlesection {
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        justify-content: flex-start; /*Maybe switching to center*/
+        
+    }
+
+
+    /*About me(four boxes)*/
+
+    #collageblock {
+        width: 100%;
+        font-size: 14px;
+        
+    }
+
+    /*Future & Skills*/
+
+    #skillblock {
+        width: 100%;
+        max-height: none;
+    }
+
+    #skillexplained {
+        height: auto;
+        font-size: 16px;
+    }
+
+    #skilltable {
+        height: auto;
+        max-width: 100%;
+        align-items: flex-start;
+    }
+
+
+    table {
+        min-width: 400px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    /*My work------------------------------------------------------*/
+
+
+    #holderforthree {
+        width: 100%;
+        height: auto;
+    }
+
+    .threecard {
+        width: 100%;
+        height: auto;
+    }
+
+    .picthree {
+        height: 130px;
+    }
+
+    .textthree section {
+        height: 175px;
+    }
+
+
+    /*Contact me----------------------------------------------------*/
+
+    #contactform {
+        width: 100%;
+        height: auto;
+    }
+
+    #contacttext {
+        width: auto;
+        font-size: 16px;
+    }
+
+    #mailbox {
+        height: auto;
+    }
+
+    #mailbox input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #mailbox input[type="submit"], #mailbox input[type="reset"] {
+        margin-right: 15px;
+    }
+
+    /*Footer----------------------------------------------------*/
+
+    footer {
+        height: auto;
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    #upperfooter {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footupsection {
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+
+
+
+
+    
+
+
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
